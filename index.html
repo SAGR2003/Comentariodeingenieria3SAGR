@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Sg.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.js" integrity="sha512-Lii3WMtgA0C0qmmkdCpsG0Gjr6M0ajRyQRQSbTF6BsrVh/nhZdHpVZ76iMIPvQwz1eoXC3DmAg9K51qT5/dEVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <title>Comentario de ingeniería #3</title>
+</head>
+<body>
+
+    <header id="masthead" class="site-header">
+      <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+              <div class="navbar-header">     
+                <a class="site-title"><span>Sergio</span>Gonzalez</a>
+                </div><!-- barra del inicio -->
+                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html" data-toggle="dropdown">Home</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Páginas de interés<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li><a target="_blank"href="https://theconversation.com/por-que-las-ninas-no-quieren-ser-informaticas-179920">Artículo</a></li>
+                        <li><a target="_blank"href="https://youtu.be/dQiV5VYU_xM">¿Qué hace un Ingeniero Informático?</a></li>
+                      </ul>
+                    </li>
+                    <li><a target="_blank" href="https://youtu.be/-50txehUiFk">¿Qué son los Estereotipos?</a></li>
+                </ul>
+              </div>
+        </div>   
+      </nav>
+    </header>
+
+    <div id="hero" class="hero overlay">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>¿Por qué hay menor cantidad de ingenieras que ingenieros informáticos?</h1>
+                <p>Con el fin de responder esta pregunta se realizó una encuesta a 19 personas con unas respectivas preguntas para así más adelante analizar dichos resultados.</p>
+            </div>
+        </div>
+    </div>
+
+    <main id="main" class="site-main">
+            <h2>¿Por qué las niñas no quieren ser informáticas?</h2>
+            <p>Este artículo redactado por Ricardo Pérez del Castillo nos habla sobre el porqué a pesar de la fuerte demanda de ingenieros informáticos, no hay tantas ingenieras como ingenieros y es que dice que hay tres razones clave por las que se presenta esta problemática:</p>
+            <div class="card-group">
+              <div class="card">
+                <img src="assets/img/inginf.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Estereotipos del informático</h5>
+                  <p class="card-text">Acá nos demuestra que la misma sociedad se ha encargado de dibujar al ingeniero informático como un hombre, asocial, el raro inteligente, que toma mucha bebida con cafeína y mantiene una vida sedentaria descuidando su aspecto.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/mujmat.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Falacias sobre las capacidades de las niñas</h5>
+                  <p class="card-text">La segunda razón es gracias a las malas atribuciones que muchos padres sin darse cuenta le dan a sus hijos, esto desde edades tempranas les dicen a las niñas qué les debe gustar, y tratan de convencerlas de qué es lo que se les da mejor.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="assets/img/mujinf.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Falta de referentes femeninos </h5>
+                  <p class="card-text">Por último hace referencia a que son muy pocas las referentes en la industria y las que hay son poco reconocidas, haciendo que ninguna niña tome aquellos referentes como inspiración.</p>
+                </div>
+              </div>
+            </div>
+
+        <section class="site-section section-services gray-bg text-center">
+            <div class="container">
+              <h2 class="heading-separator">Identificación de público entrevistado</h2>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2>Género con el que mejor se identifican los entrevistados</h2>
+                        <p>Como se puede observar de los 19 entrevistados, 11 se identifican con masculino, 8 con femenino y ninguno con otro. </p>
+                    </div>
+                    <div class="col-sm-7 hidden-xs">
+                        <p class="lead"> <canvas id="genderGr"> </canvas> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2>¿Que tantos pertenecen a la carrera?</h2>
+                        <p>Se les preguntó si estudiaban ingeniería informática o cualquier otra, a lo que nos enteramos de que solo 6 de los entrevistados no pertenecen a la carrera. </p>
+                    </div>
+                    <div class="col-sm-7 hidden-xs">
+                        <p class="lead"> <canvas id="craGr"> </canvas> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section section-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2>¿Cuál es la razón de mayor peso sobre el porqué las niñas no quieren ser informáticas?</h2>
+                        <p>Según el artículo redactado por Ricardo Pérez del Castillo, hay tres razones claves sobre el porqué las niñas no quieren ser informáticas, viendo estas tres interesantes propuestas se tomó la decisión de realizar una encuesta en la que se preguntaba sobre cuál de estas consideraba de mayor importancia, como puede observar en las gráficas presentadas según el público entrevistado la razón más relevante es "Estereotipos creados por la misma sociedad". </p>
+                    </div>
+                    <div class="col-sm-7 hidden-xs">
+                        <p class="lead"> <canvas id="RazonGr"> </canvas> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="site-section section-map-feature text-center">
+
+            <div class="container">
+                <h2>¿Qué estereotipos hay de un informático?</h2>
+                <p>Al ver los resultados de la grafica anterior, nos lleva a preguntarnos, ¿Qué estereotipos hay de un informático?, por lo que se le pide a los entrevistados que señalen las cualidades que tiene SU imagen de un/a ingenier@ informatic@, a lo que respondieron con lo siguiente:</p><br>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="14" data-speed="100">0</p>
+                            <h3>Recursiv@</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="13" data-speed="2000">0</p>       
+                            <h3>Inteligente</h3>
+                        </div>     
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="12" data-speed="1000">0</p>
+                            <h3>Paciente/Perseverante</h3>
+                        </div><!-- /.counter-item -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="10" data-speed="1000">0</p>
+                            <h3>Introvertid@</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="7" data-speed="1000">0</p>
+                            <h3>Mantiene una vida sedentaria</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="6" data-speed="1000">0</p>
+                            <h3>Asocial</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+        <section class="site-section section-services gray-bg text-center">
+            <div class="container">
+                <h2 class="heading-separator">¿Algún día el porcentaje de ingenieras alcanzará al de ingenieros graduados?</h2>
+                <p class="subheading-text">Como puede ver, nuestro público se encuentra muy dividido ante esta pregunta, ¿Usted que opina?</p>
+                <p class="lead"> <canvas id="sinoGr" width="100" height="50"> </canvas> </p>   
+        </section>
+
+        <section class="site-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="heading-separator">Conclusiones y opiniones</h2>
+                    <p >Sin duda alguna es una pena que se desperdicie tanto talento en el mundo, en un campo tan importante como lo es hoy día la informática, sin importar las razones es algo deprimente ver como miles de niñas se ven presionadas por las imágenes que la sociedad o a veces hasta sus propias familias les han inculcado, todo esto gracias a esos pensamientos machistas que han llevado a la gente a pensar que las carreras tienen género, y es que lo que es aún más lamentable, es ver como no solamente afecta en la elección de una carrera, así mismo es en nuestro diario vivir, y es que estereotipos creados hay montones incontables, que lo único que hacen es dañarnos aún más como sociedad, debemos aprender y reconocer que un ser vivo no debe valer por lo que representa o tiene, sino que por lo que es, por sus conocimientos, por sus habilidades y por su propia esencia, que hace de que el mundo avance cada vez más en distintas áreas, más allá de nuestro género, creencias o apariencia física.</p>
+                    <p>Finalmente, quiero hacer un llamado para que maduremos como sociedad, porque tengo la ilusión de que en un futuro podremos vivir en un mundo sin estereotipos, donde cada persona es libre de decidir: a que dedicarse, a lo que se la da mejor, a como vestir, a como portarse, a que creer, y entre otras muchas más, teniendo en cuenta que somos seres con libre albedrío y que debemos respetar siempre al otro.</p>
+                </div>
+        </section>
+    </main>
+
+    <footer id="Final" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <a class="site-title"><span>Sergio</span>Gonzalez</a>
+                    <p>Finalmente, agradecer a Ricardo Pérez Castillo por su artículo y a Juan Pablo Franco Rubio por su labor de docencia a lo largo de este 3.er semestre.</p>
+                </div>
+                <div class="col-lg-offset-4 col-md-3 col-sm-4 col-md-offset-2 col-sm-offset-0 col-xs-6 ">
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                    <h3>Información de interés </h3>
+                    <ul class="list-unstyled">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="https://theconversation.com/por-que-las-ninas-no-quieren-ser-informaticas-179920">Artículo</a></li>
+                        <li><a href="https://youtu.be/dQiV5VYU_xM">¿Qué hace un Ingeniero Informático?</a></li>
+                        <li><a href="https://youtu.be/-50txehUiFk">¿Qué son los Estereotipos?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Nombre mio xd">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-right">
+                            <p>Sergio Andrés González Roa</p>
+                            <p>3.er Semestre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+      var ctx=document.getElementById("genderGr").getContext("2d");
+      var Genero=new Chart(ctx,
+      {
+          type:"polarArea",
+          data:
+          {
+            labels:['Masculino','Femenino','Otro'],
+            datasets:
+            [{
+                label:'Generos',
+                data:[11,8,0],
+                backgroundColor:
+                [
+                    'rgb(19,94,168,0.7)',
+                    'rgb(187, 21, 25,0.7)',
+                    'rgb(100,100,100,0.7)'
+                ],
+                borderColor: 
+                [
+                  'rgb(10,123,235)',
+                  'rgb(220, 15, 19)',
+                  'rgb(0,0, 0)'
+                ],
+                borderWidth: 3
+            }]
+          },
+        });
+
+      var ctx=document.getElementById("craGr").getContext("2d");
+      var carrera=new Chart(ctx,
+      {
+          type:"doughnut",
+          data:
+          {
+            labels:['ingeniería informática','Otra'],
+            datasets:
+            [{
+                label:'Carreras',
+                data:[13,6],
+                backgroundColor:
+                [
+                  'rgb(19,94,168)',
+                  'rgb(187, 21, 25)'
+                ],
+                hoverOffset: 4
+            }]
+          },
+        });
+
+      var ctx=document.getElementById("RazonGr").getContext("2d");
+      var RazonGr=new Chart(ctx,
+      {
+          type:"bar",
+          data:
+          {
+            labels:['Estereotipos','Falta de referentes','Falacias'],
+            datasets:
+            [{
+              barThickness: 50,
+                label:'Estereotipos',
+                    data:[13,5,1],
+                    backgroundColor:
+                    [
+                        'rgb(19,94,168,0.7)',
+                        'rgb(21, 187, 72,0.7)',
+                        'rgb(187, 21, 25,0.7)'
+                    ],
+                    borderColor: 
+                    [
+                      'rgb(10,123,235)',
+                      'rgb(10, 219, 73)',
+                      'rgb(220, 15, 19 )'
+                    ],
+                    borderWidth: 2
+            }]
+          },
+          options:
+          {
+            scales:
+            {
+              yAxes:
+              [{
+                ticks:
+                {
+                  beginAtZero:true
+                }
+              }]
+          }}
+        });
+      var ctx=document.getElementById("sinoGr").getContext("2d");
+      var SinoGr=new Chart(ctx,
+      {
+          type:"bar",
+          data:
+          {
+            labels:['SI','NO'],
+            datasets:
+            [{
+              barThickness: 50,
+                label:'Lo lograra',
+                    data:[10,9],
+                    backgroundColor:
+                    [
+                        'rgb(19,94,168,0.7)',
+                        'rgb(187, 21, 25,0.7)'
+                    ],
+                    borderColor: 
+                    [
+                      'rgb(10,123,235)',
+                      'rgb(220, 15, 19 )'
+                    ],
+                    borderWidth: 2
+            }]
+          },
+          options:
+          {
+            scales:
+            {
+              yAxes:
+              [{
+                ticks:
+                {
+                  beginAtZero:true
+                }
+              }]
+          }}
+        });
+    </script>
+</body>
+</html>
